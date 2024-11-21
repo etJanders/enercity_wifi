@@ -1,0 +1,11 @@
+/*
+  InfoPlist.strings
+  Runner
+
+  Created by Varshita Bhat on 10/08/23.
+  
+*/
+NSLocationAlwaysAndWhenInUseUsageDescription = "Allow location access so that your smartphone can determine your connected wifi network to be used for selecting WiFi network for configuring Comet WiFi.";
+NSLocationAlwaysUsageDescription = "Allow location access so that your smartphone can determine your connected wifi network to be used for selecting WiFi network for configuring Comet WiFi.";
+NSLocationWhenInUseUsageDescription = "Allow location access so that your smartphone can determine your connected wifi network to be used for selecting WiFi network for configuring Comet WiFi.";
+NSLocationUsageDescription = "Allow location access so that your smartphone can determine your connected wifi network to be used for selecting WiFi network for configuring Comet WiFi.";

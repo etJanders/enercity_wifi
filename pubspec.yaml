@@ -1,0 +1,267 @@
+name: wifi_smart_living
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.1+2
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter_native_timezone: ^2.0.0
+  timezone: ^0.10.0
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  # Use for localization
+  # https://pub.dev/packages/intl
+  intl: any
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.1.1
+  # Used for HTTP Request handling
+  # https://pub.dev/packages/http
+  http: ^1.2.2
+  # Access Management for secured storage
+  # https://pub.dev/packages/flutter_secure_storage
+  flutter_secure_storage: ^9.2.2
+  # webview to open websides
+  # https://pub.dev/packages/webview_flutte
+  # user version 3.0.4
+  webview_flutter: ^4.0.2
+  # Permission Handling
+  # https://pub.dev/packages/permission_handler
+  permission_handler: ^11.3.1
+  # Helps to determine network information
+  # Android, iOS, MacOS, Web, Linux, Windows
+  # https://pub.dev/packages/network_info_plus
+  network_info_plus: ^6.1.1
+  #to use block pattern
+  #https://pub.dev/packages/flutter_bloc
+  flutter_bloc: ^8.1.1
+  # check network connection
+  # https://pub.dev/packages/connectivity_plus
+  connectivity_plus: ^3.0.2
+  #mqtt_interaction clinet for mqtt 3.0, 3.1 and 3.1.1
+  #https://pub.dev/packages/mqtt_client
+  mqtt_client: ^10.5.1
+  #https://pub.dev/packages/mqtt5_client
+  #mqtt5_client: ^3.3.4
+  #Provider for changenotify
+  #https://pub.dev/packages/provider
+  provider: ^6.0.3
+  #Progress Indicator for pageviewer
+  #https://pub.dev/packages/smooth_page_indicator
+  smooth_page_indicator: ^1.0.0+2
+  #helper to open wifi settings
+  #https://pub.dev/packages/app_settings
+  app_settings: ^5.1.1
+  #get device Information
+  #https://pub.dev/packages/device_info_plus
+  device_info_plus: ^11.1.1
+  #slider to change soll temperatur
+  #https://pub.dev/packages/sleek_circular_slider
+  sleek_circular_slider: ^2.0.1
+  #Splash Screen
+  #https://pub.dev/packages/flutter_native_splash
+  flutter_native_splash: ^2.2.16
+  #Time picker with interval
+  #https://pub.dev/packages/interval_time_picker
+  interval_time_picker: ^3.0.0+6
+  #https://pub.dev/packages/focused_menu
+  focused_menu: ^1.0.5
+  #https://pub.dev/packages/flutter_rounded_date_picker
+  flutter_rounded_date_picker: ^3.0.2
+  #draggable grid view
+  #https://pub.dev/packages/reorderable_grid_view/install
+  #https://www.youtube.com/watch?v=dGgkgm1mk0g
+  reorderable_grid_view: ^2.2.5
+  #https://pub.dev/packages/meta/install
+  meta: ^1.8.0
+  #check if a browser exist and help to open websides
+  #https://pub.dev/packages/url_launcher/install
+  url_launcher: ^6.1.8
+  geolocator: ^13.0.1
+  change_app_package_name: ^1.4.0
+  sizer: ^3.0.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
+
+flutter_native_splash:
+  background_image: "assets/images/white_background.png"
+android_12:
+  background_image: "assets/images/white_background.png"
+
+  android: false
+  ios: false
+    
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  generate: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:   
+    - assets/images/white_background.png
+    - assets/images/einstellungen_ansicht.png
+    - assets/images/home_ansicht.png
+    - assets/images/zeitplan_ansicht.png
+    - assets/images/benutzer_verwaltung.png
+    - assets/images/hilfe_und_feedback.png
+    - assets/images/logout.png
+    - assets/images/batterie_voll.png
+    - assets/images/batterie_75.png
+    - assets/images/batterie_50.png
+    - assets/images/batterie_fast_leer.png
+    - assets/images/paragraph.png
+    - assets/images/add_device.png
+    - assets/images/benutzerkonto.png
+    - assets/images/thermostat.png
+    - assets/images/pairing_mode_activated.png
+    - assets/images/reset_thermostat.png
+    - assets/images/reset_outline.png
+    - assets/images/thermostat_adaptieren.png
+    - assets/images/remove_battery_cover.png
+    - assets/images/insert_batteries.png
+    - assets/images/close_battery_cover.png
+    - assets/images/room_icon_bedroom_enabled_flutter.png
+    - assets/images/room_icon_bedroom_disabled_flutter.png
+    - assets/images/room_icon_bathroom_enabled_flutter.png
+    - assets/images/room_icon_bathroom_disabled_flutter.png
+    - assets/images/room_icon_child_room_enabled_flutter.png
+    - assets/images/room_icon_child_room_disabled_flutter.png
+    - assets/images/room_icon_stairs_enabled_flutter.png
+    - assets/images/room_icon_stairs_disabled_flutter.png
+    - assets/images/room_icon_office_enabled_flutter.png
+    - assets/images/room_icon_office_disabled_flutter.png
+    - assets/images/room_icon_dining_room_disabled_flutter.png
+    - assets/images/room_icon_dining_room_enabled_flutter.png
+    - assets/images/room_icon_kitchen_disabled_flutter.png
+    - assets/images/room_icon_kitchen_enabled_flutter.png
+    - assets/images/room_icons_living_room_enabled_flutter.png
+    - assets/images/room_icons_living_room_disabled_flutter.png
+    - assets/images/heating_profile_stairs_flutter.png
+    - assets/images/heating_profile_bathroom_flutter.png
+    - assets/images/heating_profile_bedroom_flutter.png
+    - assets/images/heating_profile_childroom_flutter.png
+    - assets/images/heating_profile_office_flutter.png
+    - assets/images/heating_profile_dinig_room_flutter.png
+    - assets/images/heating_profile_kitchen_flutter.png
+    - assets/images/hetaing_profiel_living_room_flutter.png
+    - assets/images/holiday_menu.png
+    - assets/images/keine_internet_verbindung.png
+    - assets/images/keine_internet_verbindung_englisch.png
+    - assets/images/heizprofil_menu.png
+    - assets/images/batterie_fast_leer_kachel.png
+    - assets/images/room_icon_wohnzimmer_disabled_flutter.png
+    - assets/images/room_icon_wohnzimmer_enabled_flutter.png
+    - assets/images/room_icon_kitchen_two_disabled_flutter.png
+    - assets/images/room_icon_kitchen_two_enabled_flutter.png
+      #Holiday profile normale Kacheln
+    - assets/images/holida_profile_autumn_disabled.png
+    - assets/images/holida_profile_autumn_enabled.png
+    - assets/images/holiday_profile_easter_disabled.png
+    - assets/images/holiday_profile_easter_enabled.png
+    - assets/images/holiday_profile_sailing_disabled.png
+    - assets/images/holiday_profile_sailing_enabled.png
+    - assets/images/holiday_profile_xmas_disabled.png
+    - assets/images/holiday_profile_xmas_enabled.png
+    - assets/images/holiday_profile_xmas_flutter.png
+    - assets/images/holiday_profile_tent_disabled.png
+    - assets/images/holiday_profile_tent_enabled.png
+    - assets/images/holiday_profile_skiing_disabled.png
+    - assets/images/holiday_profile_skiing_enabled.png
+    - assets/images/holiday_profile_summer_disabled.png
+    - assets/images/holiday_profile_summer_enabled.png
+    - assets/images/holiday_profile_summer_two_disabled.png
+    - assets/images/holiday_profile_summer_two_enabled.png
+    - assets/images/holiday_profile_camping_disabled.png
+    - assets/images/holiday_profile_camping_enabled.png
+    - assets/images/holiday_profile_traveling_disabled.png
+    - assets/images/holiday_profile_traveling_enabled.png
+    # Holiday Profile grosse Kacheln
+    - assets/images/holida_profile_autumn_flutter.png
+    - assets/images/holiday_profile_easter_flutter.png
+    - assets/images/holiday_profile_sailing_flutter.png
+    - assets/images/holiday_profile_skiing_flutter.png
+    - assets/images/holiday_profile_summer_flutter.png
+    - assets/images/holiday_profile_summer_two_flutter.png
+    - assets/images/holiday_profile_camping_flutter.png
+    - assets/images/holiday_profile_xmas_flutter.png
+    - assets/images/holiday_profile_tent_flutter.png
+    - assets/images/holiday_profile_traveling_flutter.png
+    # Heating profile kacheln
+    - assets/images/heating_profile_one_flutter.png
+    - assets/images/room_icon_heating_profile_one_enabled.png
+    - assets/images/room_icon_heating_profile_one_disabled.png
+    - assets/images/heating_profile_two_flutter.png
+    - assets/images/room_icon_heating_profile_two_disabled.png
+    - assets/images/room_icon_heating_profile_two_enabled.png
+    - assets/images/enercity_logo.png
+    - assets/images/et_logo.png
+    - assets/images/heizprofil_menu_disabled.png
+    - assets/images/ic_warning.png
+    - assets/images/window.png
+    - assets/images/warning_edited.png
+    - assets/images/ic_warning_01.png
+    - assets/images/back_icon.png
+    - assets/images/thermometer.png
+    - assets/images/delete_icon.png
+    - assets/images/app_logo.png
+
+      # An image asset can refer to one or more resolution-specific "variants", see
+    # https://flutter.dev/assets-and-images/#resolution-aware
+    - assets/ca/lets-encrypt-r3.pem
+  # For details regarding adding assets from package dependencies, see
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Titillium
+      fonts:
+        - asset: assets/fonts/titillium_light.ttf
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
